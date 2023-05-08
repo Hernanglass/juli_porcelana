@@ -1,0 +1,225 @@
+/* header index */
+.logo {
+   height: 160px;
+   margin: 30px;
+   display: flex;
+   padding-left: 80px;
+}
+
+
+
+
+
+/* main index */
+
+
+.foto-taza-index{
+    height: 400px;
+    margin: 42px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.foto-plato-index{
+    height: 400px;
+    margin: 42px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    width: 300px;
+}
+.foto-fuente-index{
+    height: 400px;
+    margin: 42px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.titulo-h2-index{
+    padding-left: 120px;
+    color: rgb(236, 79, 105);
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+.introducion-sobre-mi{
+    text-align: center;
+    margin: 25px;
+}
+
+
+
+
+
+
+/* Main productos */
+
+.productos-title{
+    font-size:  45px;
+    font-weight: bold;
+    color: rgb(183, 74, 197);
+    text-align: center;
+}
+
+.productos {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+
+
+.productos__cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    max-width: 360px;
+}
+
+.card__header img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.card__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.card__description {
+    margin-bottom: 40px;
+}
+
+.card__link {
+    background-color: rgb(157, 58, 170);
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.card__link:hover {
+    background-color: rgb(172, 71, 185);
+}
+
+
+/* main preguntas frecuentes */
+
+
+.preguntas-title{
+    font-size:  45px;
+    font-weight: bold;
+    color: rgb(183, 74, 197);
+    text-align: center;
+}
+
+
+/* footer index */
+.logos-footer-1{
+    display: flex;
+    position: relative;
+    top: 50px;
+    padding-left: 20px;
+    max-width: 200px;
+}
+
+
+.logo-mail-ubicacion{
+height: 45px;
+}
+.logos-footer-2{
+ display: flex;
+ position: relative;
+ left: 200px;
+ max-width: 135px;
+}
+.logos-redes{
+    height: 45px;
+}
+
+
+
+/* MEDIAS QUERIES */
+@media (min-width: 768px) {
+    .productos__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logos-footer-2{
+        left: 550px;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+    .main__container__img{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       margin: 25px;
+    }
+    .titulo-h2-index{
+        padding-left: 450px;
+    }
+    .foto-taza-index{
+        height: 300px;
+    }
+    .foto-fuente-index{
+        height: 300px;
+    }
+    .foto-plato-index{
+        height: 300px;
+        width: 250px;
+    }
+    .logos-footer-2{
+        left: 800px;
+    }
+    .logo{
+        padding-left: 400px;
+    }
+    .productos__cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1200px) {
+    .logo{
+        padding-left: 450px;
+        height: 200px;
+    }
+    .titulo-h2-index{
+        padding-left: 500px;
+    }
+    .logos-footer-2{
+        left: 1000px;
+    }
+    .foto-fuente-index{
+        height: 400px;
+    }
+    .foto-plato-index{
+        height: 400px;
+        width: 300px;
+    }
+    .foto-taza-index{
+        height: 400px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .logo{
+        padding-left: 540px;
+    }
+    .titulo-h2-index{
+        padding-left: 580px;
+    }
+    .logos-footer-2{
+        left: 1200px;
+    }
+  }
