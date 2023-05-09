@@ -1,9 +1,18 @@
+/* general */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* header index */
 .logo {
    height: 160px;
    margin: 30px;
    display: flex;
    padding-left: 80px;
+   
 }
 
 
