@@ -1,0 +1,83 @@
+.foto-taza-index {
+  height: 400px;
+  margin: 42px;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.foto-plato-index {
+  height: 400px;
+  margin: 42px;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  width: 300px;
+}
+
+.foto-fuente-index {
+  height: 400px;
+  margin: 42px;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.titulo-h2-index {
+  padding-left: 600px;
+  color: rgb(236, 79, 105);
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.introducion-sobre-mi {
+  text-align: center;
+  margin: 25px;
+}
+
+@media (min-width: 1000px) {
+  .titulo-h2-index {
+    padding-left: 580px;
+  }
+  .foto-taza-index {
+    height: 300px;
+  }
+  .foto-fuente-index {
+    height: 300px;
+  }
+  .foto-plato-index {
+    height: 300px;
+    width: 250px;
+  }
+}
+.productos-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(183, 74, 197);
+  text-align: center;
+}
+
+.productos {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+.productos__cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+.productos__cards__card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  max-width: 360px;
+}
+.productos__cards__card__header img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

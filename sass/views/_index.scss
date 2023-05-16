@@ -1,0 +1,45 @@
+.foto-taza-index{
+    height: 400px;
+    margin: 42px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.foto-plato-index{
+    height: 400px;
+    margin: 42px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    width: 300px;
+}
+.foto-fuente-index{
+    height: 400px;
+    margin: 42px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.titulo-h2-index{
+    padding-left:600px;
+    color: $fontlight;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+.introducion-sobre-mi{
+    text-align: center;
+    margin: 25px;
+}
+@media (min-width: $bpMedium) {
+    .titulo-h2-index{
+        padding-left: 580px;
+    }
+    .foto-taza-index{
+        height: 300px;
+    }
+    .foto-fuente-index{
+        height: 300px;
+    }
+    .foto-plato-index{
+        height: 300px;
+        width: 250px;
+    }
+}

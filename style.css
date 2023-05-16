@@ -1,10 +1,5 @@
 /* general */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* header index */
 .logo {
@@ -19,39 +14,7 @@
 
 
 
-/* main index */
 
-
-.foto-taza-index{
-    height: 400px;
-    margin: 42px;
-    border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-}
-.foto-plato-index{
-    height: 400px;
-    margin: 42px;
-    border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-    width: 300px;
-}
-.foto-fuente-index{
-    height: 400px;
-    margin: 42px;
-    border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-}
-.titulo-h2-index{
-    padding-left: 120px;
-    color: rgb(236, 79, 105);
-    font-size: 30px;
-    font-weight: bold;
-    width: 100%;
-}
-.introducion-sobre-mi{
-    text-align: center;
-    margin: 25px;
-}
 
 
 
@@ -60,18 +23,13 @@
 
 /* Main productos */
 
-.productos-title{
+
+.productos-title {
     font-size:  45px;
     font-weight: bold;
     color: rgb(183, 74, 197);
     text-align: center;
 }
-
-.productos {
-    margin-top: 60px;
-    padding: 0 20px;
-}
-
 
 
 .productos__cards {
