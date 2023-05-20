@@ -1,3 +1,7 @@
+
+
+
+
 .foto-taza-index{
     height: 400px;
     margin: 42px;
@@ -18,7 +22,7 @@
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
 }
 .titulo-h2-index{
-    padding-left:600px;
+    padding-left: 150px;
     color: $fontlight;
     font-size: 30px;
     font-weight: bold;
@@ -28,6 +32,19 @@
     text-align: center;
     margin: 25px;
 }
+
+
+
+
+@media (min-width: $bpSmall) {
+    .titulo-h2-index{
+        padding-left: 340px;
+    }
+    
+}
+
+
+
 @media (min-width: $bpMedium) {
     .titulo-h2-index{
         padding-left: 580px;
@@ -42,4 +59,67 @@
         height: 300px;
         width: 250px;
     }
+    .main__container__img{
+        padding-left: 150px;
+     }
+     
+    
+    .main__container{
+        max-width: 1200px;
+    }
+
+}
+@media (min-width: $bpLarge) {
+    .titulo-h2-index{
+        padding-left: 600px;
+    }
+    .foto-fuente-index{
+        height: 400px;
+    }
+    .foto-plato-index{
+        height: 400px;
+        width: 300px;
+    }
+    .foto-taza-index{
+        height: 400px;
+    }
+    
+    
+    .introducion-sobre-mi{
+        padding-left: 200px;
+    }
+    .main__container__img{
+        padding-left: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 25px;
+    }
+}
+@media(min-width: $bpXl) {
+    
+    .titulo-h2-index{
+        padding-left: 700px;
+        font-size: 40px;
+    }
+    
+    .foto-fuente-index{
+        height: 450px;
+    }
+    .foto-plato-index{
+        height: 450px;
+        width: 300px;
+    }
+    .foto-taza-index{
+        height: 450px;
+    }
+    .main__container{
+        padding-left: 150px;
+        &__img{
+            padding-left: 180px;
+        }
+    }
+    .introducion-sobre-mi{
+        padding-left: 550px;
+    }
+    
 }

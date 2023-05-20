@@ -1,0 +1,45 @@
+.logos-footer-1{
+    display: flex;
+    position: relative;
+    top: 50px;
+    padding-left: 20px;
+    max-width: 200px;
+    .logo-mail-ubicacion{
+        height: 45px;
+    }
+}
+.logos-footer-2{
+    display: flex;
+    position: relative;
+    left: 200px;
+    max-width: 135px;
+    .logos-redes{
+        height: 45px;
+    }
+}
+@media (min-width: $bpSmall) {
+    
+    .logos-footer-2{
+        left: 550px;
+    }
+}
+@media(min-width: $bpMedium) {
+    .logos-footer-2{
+        left: 650px;
+    }
+}
+@media(min-width: $bpLarge) {
+    .logos-footer-2{
+        left: 1000px;
+    }
+}
+@media(min-width: $bpXl) {
+    .logos-footer-2{
+        left: 1400px;
+    }
+}
+@media(min-width: $bpXXl) {
+    .logos-footer-2{
+        left: 1680px;
+    }
+}

@@ -14,13 +14,36 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 50px;
-         &__card {
+         .card {
              background-color: #fff;
              border-radius: 10px;
              padding: 20px;
              box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
              max-width: 360px;
-             &__header {
+             &__title {
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+            &__description {
+                margin-bottom: 40px;
+            }
+            
+            &__link {
+                background-color: rgb(157, 58, 170);
+                color: #fff;
+                font-weight: bold;
+                padding: 15px 0;
+                border-radius: 10px;
+                width: 100%;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                &:hover{
+                    background-color: rgb(172, 71, 185);
+                }
+            }
+
+            &__header {
                 img {
                     width: 100%;
                     border-radius: 10px;
@@ -31,4 +54,14 @@
         
     }
     }
+    }
+    @media(min-width: $bpSmall) {
+        .productos__cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media(min-width: $bpMedium) {
+        .productos__cards{
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
