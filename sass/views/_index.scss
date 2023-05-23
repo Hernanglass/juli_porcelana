@@ -33,6 +33,11 @@
     margin: 25px;
 }
 
+.main__container__img{
+    margin: 0 auto;
+    display: grid;
+}
+
 
 
 
@@ -40,7 +45,7 @@
     .titulo-h2-index{
         padding-left: 340px;
     }
-    
+   
 }
 
 
@@ -61,6 +66,8 @@
     }
     .main__container__img{
         padding-left: 150px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
      }
      
     
@@ -89,7 +96,7 @@
         padding-left: 200px;
     }
     .main__container__img{
-        padding-left: 40px;
+        padding-left: 10px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 25px;
@@ -100,6 +107,7 @@
     .titulo-h2-index{
         padding-left: 700px;
         font-size: 40px;
+        
     }
     
     .foto-fuente-index{
