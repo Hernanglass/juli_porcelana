@@ -1,45 +1,33 @@
 .logos-footer-1{
     display: flex;
+    gap: 20px;
     position: relative;
-    top: 50px;
-    padding-left: 20px;
-    max-width: 200px;
-    .logo-mail-ubicacion{
-        height: 45px;
-    }
+    font-size: 20px;
+    margin-left: 30px;
+   
 }
-.logos-footer-2{
-    display: flex;
-    position: relative;
-    left: 200px;
-    max-width: 135px;
-    .logos-redes{
-        height: 45px;
-    }
+
+.footer__container{
+background-color: lightskyblue;
+height: 110px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
 }
-@media (min-width: $bpSmall) {
-    
-    .logos-footer-2{
-        left: 550px;
-    }
+.redes{
+    text-decoration: none;
+    color: $darkblue;
 }
-@media(min-width: $bpMedium) {
-    .logos-footer-2{
-        left: 650px;
-    }
+
+.contactanos{
+    padding-right: 20px;
+   h4{
+    margin: 0px 0px 8px 0px;
+    color: $darkblue;
+   }
+   p{
+    margin: 0px;
+   }
 }
-@media(min-width: $bpLarge) {
-    .logos-footer-2{
-        left: 1000px;
-    }
-}
-@media(min-width: $bpXl) {
-    .logos-footer-2{
-        left: 1200px;
-    }
-}
-@media(min-width: $bpXXl) {
-    .logos-footer-2{
-        left: 1680px;
-    }
-}
+

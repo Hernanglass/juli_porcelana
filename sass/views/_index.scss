@@ -22,112 +22,107 @@
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
 }
 .titulo-h2-index{
-    padding-left: 150px;
+    
     color: $fontlight;
     font-size: 30px;
     font-weight: bold;
-    width: 100%;
+    
 }
 .introducion-sobre-mi{
     text-align: center;
     margin: 25px;
 }
 
-.main__container__img{
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    display: grid;
 }
+
+// .main__container__img{
+//     margin: 0 auto;
+//     display: grid;
+// }
 
 
 
 
 @media (min-width: $bpSmall) {
-    .titulo-h2-index{
-        padding-left: 340px;
-    }
+    
    
 }
 
 
 
 @media (min-width: $bpMedium) {
-    .titulo-h2-index{
-        padding-left: 580px;
-    }
-    .foto-taza-index{
-        height: 300px;
-    }
-    .foto-fuente-index{
-        height: 300px;
-    }
-    .foto-plato-index{
-        height: 300px;
-        width: 250px;
-    }
-    .main__container__img{
-        padding-left: 150px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-     }
+   
+    // .foto-taza-index{
+    //     height: 300px;
+    // }
+    // .foto-fuente-index{
+    //     height: 300px;
+    // }
+    // .foto-plato-index{
+    //     height: 300px;
+    //     width: 250px;
+    // }
+    // .main__container__img{
+        
+    //     display: grid;
+    //     grid-template-columns: repeat(2, 1fr);
+    //  }
      
     
-    .main__container{
-        max-width: 1200px;
-    }
+    // .main__container{
+    //     max-width: 1200px;
+    //     margin: 0 auto;
+    // }
 
 }
 @media (min-width: $bpLarge) {
-    .titulo-h2-index{
-        padding-left: 600px;
-    }
-    .foto-fuente-index{
-        height: 400px;
-    }
-    .foto-plato-index{
-        height: 400px;
-        width: 300px;
-    }
-    .foto-taza-index{
-        height: 400px;
-    }
+   
+    // .foto-fuente-index{
+    //     height: 400px;
+    // }
+    // .foto-plato-index{
+    //     height: 400px;
+    //     width: 300px;
+    // }
+    // .foto-taza-index{
+    //     height: 400px;
+    // }
     
     
-    .introducion-sobre-mi{
-        padding-left: 200px;
-    }
-    .main__container__img{
-        padding-left: 10px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 25px;
-    }
+    
+    // .main__container__img{
+    //     padding-left: 10px;
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 1fr);
+    //     margin: 25px;
+    // }
 }
 @media(min-width: $bpXl) {
     
-    .titulo-h2-index{
-        padding-left: 700px;
-        font-size: 40px;
+    // .titulo-h2-index{
         
-    }
+    //     font-size: 40px;
+        
+    // }
     
-    .foto-fuente-index{
-        height: 450px;
-    }
-    .foto-plato-index{
-        height: 450px;
-        width: 300px;
-    }
-    .foto-taza-index{
-        height: 450px;
-    }
-    .main__container{
-        padding-left: 150px;
-        &__img{
-            padding-left: 180px;
-        }
-    }
-    .introducion-sobre-mi{
-        padding-left: 550px;
-    }
+    // .foto-fuente-index{
+    //     height: 450px;
+    // }
+    // .foto-plato-index{
+    //     height: 450px;
+    //     width: 300px;
+    // }
+    // .foto-taza-index{
+    //     height: 450px;
+    // }
+    
+   
     
 }

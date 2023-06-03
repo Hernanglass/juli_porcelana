@@ -4,3 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+.logo__container{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logo {
+    height: 160px;
+ }
+
+
+ 
