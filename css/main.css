@@ -17,6 +17,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 .logo {
@@ -69,6 +70,7 @@ ul {
   font-weight: bold;
   color: rgb(231, 100, 128);
   text-align: center;
+  margin-top: 30px;
 }
 
 .productos {
@@ -113,11 +115,24 @@ ul {
   background-color: rgb(238, 123, 148);
   transition: all 0.6s;
 }
+.productos__cards .card__header {
+  position: relative;
+}
 .productos__cards .card__header img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
   object-fit: cover;
+}
+.productos__cards .card__header small {
+  padding: 8px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.527);
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
 }
 
 .card:hover {
@@ -139,13 +154,15 @@ ul {
   font-weight: bold;
   color: rgb(231, 100, 128);
   text-align: center;
+  margin-top: 30px;
 }
 
 .preguntas__container {
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center;
   display: grid;
   gap: 50px;
+  margin-bottom: 50px;
 }
 
 .preguntas__color {
@@ -163,7 +180,7 @@ ul {
 }
 
 .footer__container {
-  background-color: lightskyblue;
+  background: linear-gradient(rgb(192, 221, 238), lightskyblue);
   height: 110px;
   display: flex;
   align-items: center;
@@ -188,7 +205,7 @@ ul {
 
 .header {
   padding: 30px 20px;
-  background-color: lightskyblue;
+  background: linear-gradient(lightskyblue, rgb(192, 221, 238));
 }
 
 .header__container {
@@ -202,6 +219,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  display: none;
 }
 .header__container__navbar li a {
   color: rgb(231, 100, 128);
@@ -211,9 +229,33 @@ ul {
   display: flex;
   transition: all 0.6s;
 }
+.header__container__navbar__mobile i {
+  font-size: 35px;
+  color: rgb(231, 100, 128);
+}
+.header__container__navbar__mobile ul {
+  position: absolute;
+  left: 0;
+  top: 95px;
+  background: linear-gradient(rgb(192, 221, 238), white);
+  width: 100%;
+  display: none;
+}
+.header__container__navbar__mobile ul li {
+  padding: 20px 0;
+  text-align: center;
+}
+.header__container__navbar__mobile ul li a {
+  font-weight: bold;
+  color: rgb(231, 100, 128);
+}
+.header__container__navbar__mobile:hover ul {
+  display: block;
+}
 
 .header__container h3 a {
   color: rgb(231, 100, 128);
+  font-style: italic;
 }
 
 .header__container__navbar li a:hover {
@@ -221,6 +263,15 @@ ul {
   transform: translate(-6px, -6px);
   border-radius: 10px;
   box-shadow: 0px 2px 0 0px rgb(231, 100, 128);
+}
+
+@media (min-width: 768px) {
+  .header__container__navbar {
+    display: flex;
+  }
+  .header__container__navbar__mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,7 @@
     font-weight: bold;
     color: $fontlight;
     text-align: center;
+    margin-top: 30px;
 }
 .productos {
     margin-top: 60px;
@@ -46,11 +47,23 @@
             }
 
             &__header {
+                position: relative;
                 img {
                     width: 100%;
                     border-radius: 10px;
-                     margin-bottom: 20px;
-                     object-fit: cover;
+                    margin-bottom: 20px;
+                    object-fit: cover;
+                }
+                small {
+                    padding: 8px;
+                    color: white;
+                    background-color: rgba(255, 255, 255, 0.527);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    position: absolute;
+                    right: 0;
+                    border-bottom-left-radius: 10px;
+                    
                 }
              }
         

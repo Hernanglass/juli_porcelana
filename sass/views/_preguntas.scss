@@ -4,13 +4,15 @@
     font-weight: bold;
     color: $fontlight;
     text-align: center;
+    margin-top: 30px;
 }
 
 .preguntas__container{
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
-   display: grid;
-   gap: 50px;
+    display: grid;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 .preguntas__color{
     color: $fontlight;

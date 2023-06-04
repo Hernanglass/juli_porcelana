@@ -4,7 +4,7 @@
 
 .header {
     padding: 30px 20px;
-    background-color: lightskyblue;
+    background: linear-gradient(lightskyblue, rgb(192, 221, 238));
 }
 
 .header__container {
@@ -17,6 +17,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
+        display: none;
         li{
             
             a{
@@ -30,9 +31,35 @@
             }
         }
     }
+    &__navbar__mobile{
+        i {
+            font-size: 35px;
+            color: $fontlight;
+        }
+        ul {
+            position: absolute;
+            left: 0;
+            top: 95px;
+            background: linear-gradient(rgb(192, 221, 238), white);
+            width: 100%;
+            display: none;
+            li {
+                padding: 20px 0;
+                text-align: center;
+                a{
+                    font-weight: bold;
+                    color: $fontlight
+                }
+            }
+        }
+        &:hover ul {
+            display: block;
+        }
+    }
 }
 .header__container h3 a {
     color: $fontlight;
+    font-style: italic;
     
 }
 .header__container__navbar li a:hover {
@@ -44,6 +71,17 @@
 }
 
 
+
+
+
+@media(min-width: $bpSmall) {
+    .header__container__navbar{
+        display: flex;
+    }
+    .header__container__navbar__mobile{
+        display: none;
+    }
+}
 
 
 
