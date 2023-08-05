@@ -101,7 +101,7 @@ ul {
 .productos__cards .card__description {
   margin-bottom: 40px;
 }
-.productos__cards .card__link {
+.productos__cards .card__button {
   background-color: rgb(231, 100, 128);
   color: #fff;
   font-weight: bold;
@@ -112,7 +112,7 @@ ul {
   text-align: center;
   text-decoration: none;
 }
-.productos__cards .card__link:hover {
+.productos__cards .card__button:hover {
   background-color: rgb(238, 123, 148);
   transition: all 0.6s;
 }
