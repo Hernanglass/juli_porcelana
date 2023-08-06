@@ -88,7 +88,7 @@ const productosCard = () => {
 productosCard()
 
 let botonCarrito = document.getElementById("botonCarrito")
-
+let modalBody = document.getElementById("modal-body")
 
 function agregarAlCarrito(producto){
         productosEnCarrito.push(producto)
@@ -103,15 +103,16 @@ function cargarProductosCarrito(array) {
 
     array.forEach(productoCarrito => {
         modalBody.innerHTML += `<div class="card border-primary mb-3" id ="productoCarrito${productoCarrito.id}" style="max-width: 540px;">
-      <img class="card-img-top" height="300px" src="assets/${productoCarrito.imagen}" alt="${productoCarrito.titulo}">
+      <img class="card-img-top" height="300px" src="../assets/images/${productoCarrito.imagen}" alt="${productoCarrito.nombre}">
       <div class="card-body">
-              <h4 class="card-title">${productoCarrito.titulo}</h4>
+              <h4 class="card-title">${productoCarrito.nombre}</h4>
               <p class="card-description">$${productoCarrito.descripcion}</p>
               <p class="card-text">$${productoCarrito.precio}</p> 
               <button class= "btn btn-danger" id="botonEliminar${productoCarrito.id}"><i class="fas fa-trash-alt"></i></button>
       </div>    
   </div>
 `
+
     });
 
     array.forEach((productoCarrito, indice) => {
@@ -131,3 +132,4 @@ function cargarProductosCarrito(array) {
 botonCarrito.addEventListener("click", () => {
     cargarProductosCarrito(productosEnCarrito)
 })
+console.log(productoCarrito)
