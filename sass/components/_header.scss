@@ -43,6 +43,13 @@
             background: linear-gradient(rgb(192, 221, 238), white);
             width: 100%;
             display: none;
+            a {
+                
+                margin: 0px 0px;
+                display: flex;
+                justify-content: center;
+                
+            }
             li {
                 padding: 20px 0;
                 text-align: center;
@@ -70,6 +77,13 @@
     
 }
 
+
+#botonCarrito {
+    background-color: transparent;
+    border: 0px;
+    color: $fontlight;
+    
+}
 
 
 
