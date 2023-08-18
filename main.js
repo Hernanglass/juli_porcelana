@@ -29,17 +29,17 @@ const productosCard = () => {
     btnAgregar.addEventListener("click", () => {
         agregarAlCarrito(producto)
 
-        
+    
         Toastify({
             text: "Añadido al carrito",
-            duration: 3000,
+            duration: 2500,
             gravity: "bottom",
             position: "center",
             style: {
             background: "linear-gradient(to right, #e76480, #f12652)",
             },
         }).showToast();
-    })
+    }) 
 
 }
 
@@ -54,9 +54,10 @@ let modalBody = document.getElementById("modal-body")
 function agregarAlCarrito(producto){
         productosEnCarrito.push(producto)
         localStorage.setItem("carrito", JSON.stringify(productosEnCarrito))
+        cargarProductosCarrito(productosEnCarrito);
 }
 
-
+cargarProductosCarrito(productosEnCarrito);
 
 
 function cargarProductosCarrito(array) {
