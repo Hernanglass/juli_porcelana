@@ -9,7 +9,12 @@ if (localStorage.getItem("carrito")) {
     localStorage.setItem("carrito", JSON.stringify(productosEnCarrito))
 }
 
-const productosCard = () => {
+
+
+
+
+
+const productosCard = (data) => {
     for (let i = 0; i < productosDePorcelana.length; i++) {
         let producto = productosDePorcelana[i]
         let productosContainer = document.querySelector(".productos__cards")
