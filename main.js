@@ -11,9 +11,13 @@ if (localStorage.getItem("carrito")) {
 
 
 
+fetch('./data.json')
+.then((response) => response.json())
+.then((data) => {
+    productosCard()
+}
 
-
-
+)
 const productosCard = (data) => {
     for (let i = 0; i < productosDePorcelana.length; i++) {
         let producto = productosDePorcelana[i]

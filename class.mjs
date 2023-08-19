@@ -114,14 +114,7 @@
 
 
 
-fetch('./data.json')
-.then((response) => response.json())
-.then((data) => {
-    productosCard(data)
-    console.log(data)
-}
 
-)
 
 
 
