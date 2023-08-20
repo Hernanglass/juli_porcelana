@@ -31,6 +31,9 @@
 
         <li><a href="./preguntas.html">Preguntas frecuentes</a></li>
 
+        <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
+
+
       </ul>
 
       <!-- mobile -->
@@ -45,6 +48,9 @@
 
           <li><a href="./preguntas.html">Preguntas frecuentes</a></li>
 
+          <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
+
+
         </ul>
       </div>
     
@@ -55,6 +61,32 @@
     
 </header>
     <main>
+
+
+      <!--Modal Carrito-->
+<div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modal-body">
+
+      </div>
+      <div class="row ml-ato">
+        <p id="precioTotal"></p>
+      </div>
+      <div class="modal-footer">
+
+
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <section class="logo__container">
         <img class="logo" src="../assets/images/tazas logo.jpg" alt="logo" />
@@ -102,5 +134,8 @@
       </section>
     </section>
     </footer>
+    <script src="../class.mjs"></script>
+    <script type = "module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

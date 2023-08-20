@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nombre": "plato verduras",
+        "nombre": "Plato verduras",
         "descripcion": "Plato hondo de verduras",
         "precio": 5900,
         "imagen": "plato-verduras.jpeg"

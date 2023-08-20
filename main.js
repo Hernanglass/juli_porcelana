@@ -1,26 +1,24 @@
 import productosDePorcelana from "./class.mjs";
+
+
+console.log(productosDePorcelana)
+productosDePorcelana.then(data => {
+    productosCard(data);
+})
     
         
 let productosEnCarrito = [];
 
-if (localStorage.getItem("carrito")) {
-    productosEnCarrito = JSON.parse(localStorage.getItem("carrito"))
-} else {
-    localStorage.setItem("carrito", JSON.stringify(productosEnCarrito))
-}
+
+productosEnCarrito = localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : (localStorage.setItem("carrito", JSON.stringify(productosEnCarrito)), productosEnCarrito);
 
 
 
-fetch('./data.json')
-.then((response) => response.json())
-.then((data) => {
-    productosCard()
-}
 
-)
+
 const productosCard = (data) => {
-    for (let i = 0; i < productosDePorcelana.length; i++) {
-        let producto = productosDePorcelana[i]
+    for (let i = 0; i < data.length; i++) {
+        let producto = data[i]
         let productosContainer = document.querySelector(".productos__cards")
         let card = document.createElement("article");
         card.className = "card"
@@ -55,10 +53,11 @@ const productosCard = (data) => {
 
 }
 
-productosCard()
+
 
 let botonCarrito = document.getElementById("botonCarrito")
 let modalBody = document.getElementById("modal-body")
+let botonFinalizarCompra = document.getElementById("botonFinalizarCompra")
 
 function agregarAlCarrito(producto){
         productosEnCarrito.push(producto)
@@ -78,7 +77,7 @@ function cargarProductosCarrito(array) {
       <div class="card-body">
               <h4 class="card-title">${productoCarrito.nombre}</h4>
               <p class="card-description">${productoCarrito.descripcion}</p>
-              <p class="card-text">$${productoCarrito.precio}</p> 
+              <p class="card-text">$${productoCarrito.precio}</p>
               <button class= "btn btn-danger" id="botonEliminar${productoCarrito.id}"><i class="fas fa-trash-alt"></i></button>
       </div>    
   </div>
@@ -100,7 +99,23 @@ function cargarProductosCarrito(array) {
 
 }
 
+
 botonCarrito.addEventListener("click", () => {
     cargarProductosCarrito(productosEnCarrito)
     
+})
+
+botonFinalizarCompra.addEventListener("click", () => {
+productosEnCarrito = []
+
+Swal.fire({
+    title: 'Compra finalizada',
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp'
+    }
+  })
+  
 })
